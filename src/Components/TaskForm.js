@@ -110,9 +110,8 @@ const TaskForm = ({ onSubmit, initialData = {}, update }) => {
       <Grid item xs={12} md={2}>
         <input
           type="file"
-          accept="image/png, image/jpeg"
+          accept="application/pdf"
           onChange={handleFileChange}
-          
         />
       </Grid>
       <Grid item xs={12} md={2}>
