@@ -17,7 +17,7 @@ const TaskItem = ({ task, onDelete, onComplete }) => {
   };
 
   // Construct the URL to the PDF file
-  const pdfUrl = task.document ? `http://localhost:5000/${task.document}` : ""; // Adjust the URL based on your server's address
+  const pdfUrl = task.document ? `https://task-management-backend-1-1l1b.onrender.com/${task.document}` : ""; // Adjust the URL based on your server's address
 
   return (
     <TableRow>
