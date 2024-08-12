@@ -16,8 +16,10 @@ const TaskItem = ({ task, onDelete, onComplete }) => {
     }
   };
 
-  // Construct the URL to the PDF file
-  const pdfUrl = task.document ? `https://task-management-backend-1-1l1b.onrender.com/${task.document}` : ""; // Adjust the URL based on your server's address
+  // Adjust URL based on Cloudinary resource type
+  const pdfUrl = task.document
+    ? task.document
+    : "";
 
   return (
     <TableRow>
